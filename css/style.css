@@ -1,0 +1,269 @@
+@font-face {
+  font-family: Kiona;
+  src: url(../fonts/Kiona-Regular.ttf);
+}
+
+body {
+    background-color: #171925;
+    color: #fff;
+    margin: 0;
+    font-family: 'Open Sans';
+}
+
+a {
+    color: #FF9900;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Kiona;
+    background: url(../media/text_clip.png) 0 0 repeat-x;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 6em;
+    margin-top: -0.2em;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-family: Kiona;
+    background: url(../media/text_clip.png) 0 0 repeat-x;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 2em; 
+    /*     color: #FF9900; */
+}
+
+h3 {
+    font-family: Kiona;
+    background: url(../media/text_clip.png) 0 0 repeat-x;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-transform: uppercase;
+    font-size: 5em; 
+    /*     color: #FF9900; */
+}
+
+h3 > span {
+    color: #FFF; 
+    font-size: 0.5em;
+}
+
+h4 {
+    color: #FFF; 
+    font-family: Kiona;
+    font-size: 3em;
+}
+
+h5 {
+    color: #FFF; 
+    font-family: Kiona;
+    font-size: 2em;
+}
+
+p {
+    line-height: 1.9em;
+    margin-left: 70px;
+}
+
+hr.small-line {
+    width: 10%;
+    margin-left: 0;
+    border: 3px solid #FF9900;
+    margin-bottom: 6em;
+}
+
+#header > span {
+    font-family: Kiona;
+    font-size: 1.5em;
+}
+
+.row {
+    display: flex;
+}
+  
+.column-menu {
+    width: 500px;
+    padding: 50px;
+}
+
+.column-page {
+    width: 100%;
+    background-color: #1d202e;
+}
+
+/* Menu */
+ul.menulist {
+    list-style: none;
+}
+
+ul.menulist > li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    height: 50px;
+    vertical-align: middle;
+    padding-left: 15px;
+}
+
+ul.menulist > li:hover {
+    background-color: #1d202e;
+}
+
+/* Tabs */
+
+.tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    padding: 50px;
+    display: none;
+    height: 100%;
+    max-width: 1100px;
+}
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+/* Images */
+img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.imgfull {
+    max-width: 700px;
+}
+
+figure {
+    background-color: #242736;
+    border: 5px solid #2d334a;
+    margin-left: -5px;
+    float: left;
+}
+
+figcaption {
+    padding: 10px;
+}
+
+/* Arrière-Plans */
+#Leviathan {
+    background: url(../media/leviathan.png) #1d202e;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-blend-mode: color-dodge;
+}
+#Razorscale {
+    background: url(../media/razorscale.png) #1d202e;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-blend-mode: color-dodge;
+}
+#Ignis {
+    background: url(../media/ignis.png) #1d202e;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-blend-mode: color-dodge;
+}
+#Assembly {
+    background: url(../media/assemblyofiron.png) #1d202e;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-blend-mode: color-dodge;
+}
+#Kologarn {
+    background: url(../media/kologarn.png) #1d202e;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-blend-mode: color-dodge;
+}
+#Auriaya {
+    background: url(../media/auriaya.png) #1d202e;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-blend-mode: color-dodge;
+}
+#Thorim {
+    background: url(../media/thorim.png) #1d202e;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-blend-mode: color-dodge;
+}
+
+#Hodir {
+    background: url(../media/hodir.png) #1d202e;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-blend-mode: color-dodge;
+}
+#Freya {
+    background: url(../media/freya.png) #1d202e;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-blend-mode: color-dodge;
+}
+#Mimiron {
+    background: url(../media/mimiron.png) #1d202e;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-blend-mode: color-dodge;
+}
+#Vezax {
+    background: url(../media/vezax.png) #1d202e;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-blend-mode: color-dodge;
+}
+#YoggSaron {
+    background: url(../media/yoggsaron.png) #1d202e;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-blend-mode: color-dodge;
+}
+#Algalon {
+    background: url(../media/algalon.png) #1d202e;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-blend-mode: color-dodge;
+}
+.important {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: block;
+    border: 1px solid #fff;
+}
+
+.checklist {
+    display: block;
+    padding: 15px;
+    border: 1px solid #596c7e;
+    background-color: #334150;
+    margin-left: 70px;
+    line-height: 1.9em;
+}
+
+.summary {
+    display: block;
+    padding: 15px;
+    border: 1px solid #596c7e;
+    background-color: #334150;
+    margin-left: 70px;
+    line-height: 1.9em;
+}
+
+ul.pagelist > li {
+    margin-left: 90px;
+    line-height: 1.9em;
+}
+
