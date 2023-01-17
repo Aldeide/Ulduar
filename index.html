@@ -24,6 +24,7 @@
                     <li onclick="openPage(event, 'Leviathan')" class="tablinks active" id="Leviathantab">Le Léviathan des Flammes</li>
                     <li onclick="openPage(event, 'Ignis')" class="tablinks">Ignis</li>
                     <li onclick="openPage(event, 'Razorscale')" class="tablinks">Razorscale</li>
+                    <li onclick="openPage(event, 'XT')" class="tablinks">Déconstructeur XT-002</li>
                 </ul>
                 <h2>L'Antichambre d'Ulduar</h2>
                 <ul class="menulist">
@@ -57,7 +58,7 @@
                     <p>Le Léviathan ne possède pas de table d’aggro et va pourchasser un véhicule toutes les 30 secondes (un engin de siège ou un démolisseur; pas les motos). Si le Léviathan arrive à portée du véhicule pourchassé, il lui inflige énormément de dégâts.<br />
                         Les dégâts infligés au boss proviennent majoritairement du debuff stackable pyrite des démolisseurs qu’il faut maintenir à tout prix.<br />
                         Les passagers des engins de siège et des démolisseurs passeront leur temps à tuer des adds volant afin d’obtenir des barils de pyrite pour recharger les démolisseurs.<br />
-                        A noter qu’il y a une “première” phase avant le combat de balade dans la zone à véhicule où l’on trouve des trash tout pourris et des tours de défenses (à ne pas détruire dans le mode normal)<br />
+                        A noter qu’il y a une “première” phase avant le combat de balade dans la zone à véhicule où l’on trouve des trash et des tours de défenses (à ne pas détruire dans le mode normal)<br />
                         </p>
 
                         <h5>Checklist</h5>
@@ -68,38 +69,166 @@
                         </div>
 
                         <h5>Rôles des véhicules</h5>
-                        <p>Les conducteurs des démolisseurs seront la source principale de dégâts grâce à leur compétence
-                        <a href="https://www.wowhead.com/wotlk/fr/spell=62490/catapulter-un-tonneau-de-pyrite"></a> mais qui consommera de l'énergie. Cette compétence applique du dégât sur la durée qui peut se cumuler jusqu'à 10 fois.</p>
-                    <p>Il est très important de s'assurer que ce dégât sur la durée ne disparaisse pas.</p>
+                        <h6>Démolisseurs</h6>
+                        <div class="checklist">
+                            En résumé:<br />
+                            • Conducteurs: stacker la pyrite sur le boss et la maintenir en priorité (même en étant pourchassé par le boss).<br />
+                            • Passagers: recharger le véhicule en pyrite autour de 50%. Tuer les mobs volants pour faire tomber de la pyrite.<br />
+                        </div>
                         <figure>
                             <img src="media/leviathan-pyrite.jpg" />
                             <figcaption>Un baril de Pyrite</figcaption>
                         </figure>
+                        <p>Les conducteurs des démolisseurs seront la source principale de dégâts grâce à leur compétence
+                        <a href="https://www.wowhead.com/wotlk/fr/spell=62490/catapulter-un-tonneau-de-pyrite"></a> mais qui consommera de l'énergie. Cette compétence applique du dégât sur la durée qui peut se cumuler jusqu'à 10 fois.</p>
+                    
+                        
+                        <p>Il est très important de s'assurer que ce dégât sur la durée ne disparaisse pas.</p>
+                        <p>Les conducteurs doivent également kiter le boss si son véhicule est la cible du Léviathan. Si il n'y a rien d'autre à faire, à défaut utiliser 'Catapulter un rocher' sur le boss.</p>
                     <p>
                         Les passagers des démolisseurs peuvent recharger l'énergie du véhicule en attrapant des barils de pyrite qui rempliront l'énergie du démolisseur de 50%. En général, il faut chercher à recharger le démolisseur quand sont énergie est tombée à 50%.<br />
-                        Des robots volants possèdent ces barils et les passagers des démolisseurs et des engins de siège peuvent tirer dessus pour faire tomber les barils de pyrite.
+                        Des robots volants possèdent ces barils et les passagers des démolisseurs peuvent tirer dessus pour faire tomber les barils de pyrite.
                     </p>
+                    <h6>Engins de Siège</h6>
+                    <div class="checklist">
+                        En résumé:<br />
+                        • Conducteurs: fuir le boss au besoin. Interrompre <a href="https://www.wowhead.com/wotlk/fr/spell=62396/d%C3%A9charges-de-flammes"></a> avec <a href="https://www.wowhead.com/wotlk/fr/spell=62522/electro-choc"></a>.<br />
+                        • Passagers: tuer les mobs volants pour faire tomber de la pyrite.<br />
+                    </div>
+                    <p>Les engins de siège peuvent être pourchassés par le boss, les conducteurs devront alors fuir jusqu'à ce qu'il change de cible. Les passagers devront faire tomber des barils de pyrite en tuant les mobs volants.</p>
+                    <h6>Motos</h6>
+                    <p>Sans tours additionelles, le rôle des motos est limité dans la mesure où on ne catapultera personne pour détruire les tourelles du Léviathan. Les motos peuvent poser des flaques d'huile qui ralentissent le boss et peuvent être mise à feu par les autres véhicules pour des dégâts supplémentaires.</p>    
                 </div>
                 <div id="Razorscale" class="tabcontent">
                     <h3>Tranchécaille<br />
                     <span>Razorscale</span></h3>
+                    <h4>Mode Normal Uniquement</h4>
+                    <p>Le combat se déroule en trois phases (la première et seconde phase peuvent se répéter si le DPS est insuffisant).<br />
+                        La première phase consiste à gérer certains types d’adds en attendant que des harpons soient disponibles. Quand tous les harpons ont été tirés, le dragon descend et il faut le descendre à 50% pour déclencher la dernière phase.
+                        </p>
+                    <h5>Checklist</h5>
+                    <div class="checklist">
+                        • Attendre qu’une vague d’adds soit passée avant de le faire descendre.<br />
+                        • Il faut viser deux phases de vol maximum pour éviter le berserk.<br />
+                        • Totem de Résistance Nature.
+                    </div>
+                    <h5>Phase 1</h5>
+                    <p>Il y a trois types d'adds qui vont apparaître dans la salle:</p>
+                    <ul class="pagelist">
+                        <li>Sentinelles: à tanker écartés du raid. Les DPS distances doivent se concentrer dessus en priorité. Pas de mêlée à cause du <a href="https://www.wowhead.com/wotlk/fr/spell=63806/tourbillon"></a> qui tue instantanément.</li>
+                        <li>Gardiens: font des <a href="https://www.wowhead.com/wotlk/fr/spell=64757/frappe-temp%C3%AAte"></a> à dispel.</li>
+                        <li>Veilleurs: Les DPS mêlée doivent se concentrer dessus et interrompre leurs chaînes d’éclair (qui peuvent se stack).</li>
+                    </ul>
+                    <h5>Phase 2</h5>
+                    <p>Razorscale est happé par les harpons et est au sol. Il faut achever les adds rapidement puis passer sur le boss avec une BL. Le boss passe en phase 3 si il arrive à 50% de vie.</p>
+                    <h5>Phase 3</h5>
+                    <p>Razorscale est  au sol indéfiniment. Il faut changer de tanks tous les deux/trois stacks de <a href="https://www.wowhead.com/wotlk/fr/spell=64771/fusion-de-larmure">. Le tank devra également déplacer le boss pour éviter les zones de flammes bleues (<a href="https://www.wowhead.com/wotlk/fr/spell=64733/flamme-d%C3%A9vorante"></a>) qu'il pose sur un joueur de temps en temps.</p>
                 </div>
                 <div id="Ignis" class="tabcontent">
                     <h3>Ignis<br /></h3>
                     <h4>Mode Normal Uniquement</h4>
-                    <p>Ignis est un combat globalement statique hormis pour un OT qui aura un rôle particulier dans la gestion d'adds.</p>
+                    <p>Il s’agit d’un boss largement statique qui dépend beaucoup du off-tank ainsi que des healers. Le mécanique principale consiste à gérer un add qui apparaît de temps en temps et tenir en vie les joueurs aléatoires qui vont être attrapés par le boss 1 à 1 pour être mis dans le ventre (marmite) du boss .</p>
                     <h5>Checklist</h5>
                     <div class="checklist">
                         • Deux tanks, un sur le boss, un sur les adds.<br />
                         • Assigner un DPS capable de sortir un gros dégât en un coup pour tuer les adds.<br />
+                        • Aura de RF.
                     </div>
+                    <h5>Le combat</h5>
+                    <p>Le boss doit être tanké près de l’eau pour faciliter la tâche du offtank et tourné dos au raid en raison de son souffle de feu.</p>
+                    <ul class="pagelist">
+                        <li><a href="https://www.wowhead.com/wotlk/fr/spell=63472/flots-de-flammes"></a>: ce sort produit des dégâts de feu et interrompt l’incantation des sorts pendant 6 secondes. Il faut veiller à ne pas être en train d’incanter pour éviter le silence. A noter qu’un paladin avec <a href="https://www.wowhead.com/wotlk/fr/spell=31821/ma%C3%AEtrise-des-auras"></a> et l’<a href="https://www.wowhead.com/wotlk/fr/spell=19746/aura-de-concentration"></a> peut palier ce sort une ou deux fois (à annoncer).
+                        </li>
+                        <li><a href="https://www.wowhead.com/wotlk/fr/spell=63477/marmite-de-scories"></a>: un joueur est pris par le boss et subit environ 60,000 dégâts de feu sur 10 secondes. Le joueur peut toujours faire des actions (dont se soigner et utiliser des cd défensifs). La priorité des soigneurs est de s’assurer que cette personne reste en vie.
+                        </li>
+                    </ul>
+                    <h5>Gestion des Adds</h5>
+                    <p>
+                        Un add sera activé très vite au début du combat puis tous les 30 à 40 secondes.<br />
+Chaque add en vie donne 20% de dégâts supplémentaires à Ignis.<br />
+Un offtank récupère les adds et les place dans une zone de feu pour qu’ils gagnent des stacks de <a href="https://www.wowhead.com/wotlk/fr/spell=62343/chaleur"></a> jusqu’à 10 et l’add sera <a href="https://www.wowhead.com/wotlk/fr/spell=62373/en-fusion"></a>. Une fois en fusion, il faut déplacer l’add dans l’eau pour qu’il devienne paralysé (<a href="https://www.wowhead.com/wotlk/fr/spell=62382/fragile"></a>). Un DPS assigné à la tâche devra faire 5000 de dégâts en un coup pour détruire l’add (qui explosera et fera énormément de dégâts autour de lui).
+
+                    </p>
+                </div>
+                <div id="XT" class="tabcontent">
+                    <h3>Déconstructeur XT-002<br /><span>XT-002 Deconstructor</span></h3>
+                    <h4>Mode Normal</h4>
+                    <p>Il s'agit d'un combat en deux phases avec des mécaniques assez simples mais qui infligent énormément de dégâts si le raid n'est pas assez réactif. La phase 1 consistera à gérer deux débuffs et <a href="https://www.wowhead.com/wotlk/fr/spell=62776/col%C3%A8re-assourdissante"></a>. A 75%, 50% et 25% le boss passera en phase 2 où son coeur sera exposé pendant 30s. Détuire le coeur conduira le boss à passer en HM.</p>
+                    <h5>Checklist</h5>
+                    <h5>Phase 1</h5>
+
+                    <p>Le boss sera placé sur un côté de la salle (le tanker près de deux tas de débris empêche le pop d'adds dessus). Le raid sera packé, les mêlées au cac derrière le boss, les distance un peu plus loin derrière.</p>
+                    <p>Toutes les minutes le boss utilisera <a href="https://www.wowhead.com/wotlk/fr/spell=62776/col%C3%A8re-assourdissante"></a> qui produit des dégâts de raid importants (120% de la vie max du raid sur 12 secondes) et qu'on peut gérer avec des cooldowns.</p>
+                    <p>Il placera régulièrement deux débuffs:</p>
+                    <ul class="pagelist">
+                        <li><a href="https://www.wowhead.com/wotlk/fr/spell=65121/lumi%C3%A8re-incendiaire"></a></li>
+                        <li><a href="https://www.wowhead.com/wotlk/fr/spell=64234/bombe-%C3%A0-gravit%C3%A9"></a></li>
+                    </ul>
+                    <p>Ces deux débuffs créent des dégâts autour de la cible après neuf secondes. Dans les deux cas il suffit de s'éloigner du raid, exploser et revenir.</p>
+                    <h5>Phase 2</h5>
+                    <p>A 75%, 50% et 25% le coeur du déconstructeur tombe au sol pendant 30 secondes. Après ces 30 secondes, le boss repasse en phase 1.</p>
+                    <p>Pendant cette phase, tous les dégâts infligés sur le coeur sont répercutés sur le boss pour le double.</p>
+                    <p>Pendant que le coeur est au sol, des adds apparaissent sur les tas de débris:</p>
+                    <ul class="pagelist">
+                        <li>Robots Réparateurs (Scrapbots): pas d'aggro ni de dégats mais soignent le boss pour 1% par seconde si ils arrivent au cac du boss.</li>
+                        <li>Robots Bombes (Boombots): explosent lors de leur destruction ou si ils arrivent sur un joueur. Font également des dégâts aux autres robots et doivent être priorisé par certains DPS distance.</li>
+                        <li>Robots roueurs (Pummelers): des dégâts modérés mais doivent être tankés derrière le boss pour être cleave par les DPS mêlée qui resteront sur le coeur. Doivent être détournés sur le tank.</li>
+                    </ul>
                 </div>
                 <div id="Assembly" class="tabcontent">
                     <h3>L'Assemblée de Fer<br />
                     <span>The Assembly of Iron</span></h3>
+                    <h4>Mode Normal</h4>
+                    <p>Ce combat comprend trois boss et chacun a des compétences différentes. De plus, à la mort d'un des membres, les autres gagnent en compétences, augmentent leurs dégâts et sont complètement soignés. Les trois boss sont:</p>
+                    <ul class="pagelist">
+                        <li>Brise-Acier (Steelbreaker): un géant.</li>
+                        <li>Maître des Runes Molgeim (Runemaster Molgeim): un Vrykul.</li>
+                        <li>Mande-Foudre Brundir (Stormcaller Brundir): Un Nain</li>
+                    </ul>
+                    <h5>Checklist</h5>
+                    <div class="checklist">
+                        • Totem de RN.<br />
+                        • Malédiction des Langages sur Brundir (le petit).<br />
+                        • Brundir peut être assommé sauf pendant <br />
+                        • Il faut dispel Molgeim avec un mage en permanence.<br />
+                    </div>
+                    <h5>L'Ordre</h5>
+                    <p>Suivant l’ordre où nous les boss seront tués, le combat est plus ou moins dur.<br />
+                        Le Hard Mode est identifié quand Brise-acier (Steelbreaker) est tué en dernier.<br />
+                        Un pseudo Medium Mode est faisable en tuant Molgeim en dernier<br />
+                        Le Normal Mode est réalisé quand Brundir est tué en dernier.<br />
+                        </p>
+                        <h5>Compétences des Boss</h5>
+                        <h6>Mande-Foudre Brundir (Stormcaller Brundir)</h6>
+                        <p></p>
                 </div>
                 <div id="Kologarn" class="tabcontent">
                     <h3>Kologarn</h3>
+                    <h4>Mode Normal Uniquement</h4>
+                    <p>C’est un combat assez simple. Il est nécessaire d’avoir deux tanks pour Kologarn car un swap est à faire à cause de débuff appliqué sur le tank.
+                        Il faut faire très attention aux joueurs qui seront grip par le bras droit.
+                        </p>
+                    <h5>Checklist</h5>
+                    <div class="checklist">
+                        • Il est nécessaire d’avoir au minimum un mêlée au corps à corps, sinon c’est la mort du raid très rapidement en raison de <a href="https://www.wowhead.com/wotlk/fr/spell=62030/souffle-p%C3%A9trifiant"></a><br />
+                        • Enrage à 8 minutes.<br />
+                    </div>
+                    <h5>Le combat</h5>
+
+                    <div class="summary">
+                        En résumé:<br />
+                        • Toujours quelqu'un en mêlée.<br />
+                        • Changer de tank après deux stacks de <a href="https://www.wowhead.com/wotlk/fr/spell=64002/broie-armure"></a>.<br />
+                        • Kiter <a href="https://www.wowhead.com/wotlk/fr/spell=63346/rayon-de-loeil-focalis%C3%A9"></a>.<br />
+                        • Passer sur le bras droit (à la gauche du raid) lors de <a href="https://www.wowhead.com/wotlk/fr/spell=64292/poigne-de-pierre"></a>.<br />
+                        • Les DPS distance gèrent les adds après la destruction d'un bras. Ces adds seront tankés par le tank qui n'est pas sur le boss.<br />
+                    </div>
+                    <p>Kologarn nécessite deux tanks qui s'échangent le boss tous les deux stack de <a href="https://www.wowhead.com/wotlk/fr/spell=64002/broie-armure"></a> appliqué par <a href="https://www.wowhead.com/wotlk/fr/spell=63356/frappe-de-haut-en-bas"></a> ou <a href="https://www.wowhead.com/wotlk/fr/spell=63573/frappe-de-haut-en-bas-%C3%A0-une-main"></a> utilisé si il lui manque un bras.</p>
+                    <p>Kologarn ciblera un joueur avec <a href="https://www.wowhead.com/wotlk/fr/spell=63346/rayon-de-loeil-focalis%C3%A9"></a> qui devra le kiter au fond de la salle sans aller sur d'autres joueurs.</p>
+                    <p>Il faut focus le bras droit quand il est pop (à la gauche du raid) car le bras droit a une compétence dangereuse. En effet, il va attraper régulièrement 3 joueurs du raid avec <a href="https://www.wowhead.com/wotlk/fr/spell=64292/poigne-de-pierre"></a>jusqu’à les tuer. Pour libérer ces joueurs, il faut faire suffisamment de dégâts pour qu’il les relâche ou avoir cassé le bras.</p>
+                    <p>Quand le bras est détruit, plusieurs adds vont pop, il faudra les offtanker loin du raid car ils zonent régulièrement. Cela sera aux DPS distance de focus ces adds.</p>
+                    <p>Le bras gauche ne représente pas grand danger (il fait des dégâts toutes les 25 secondes sur l’ensemble du raid mais faibles). Il sera donc ignoré (sauf pour de potentiels Hauts faits). De fait, sa compétence <a href="https://www.wowhead.com/wotlk/fr/spell=64004/cri-de-pierre"></a> ne sera pas utilisée.
+                        </p>
                 </div>
                 <div id="Auriaya" class="tabcontent">
                     <h3>Auriaya</h3>
