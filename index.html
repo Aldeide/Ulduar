@@ -1,0 +1,404 @@
+<html>
+    <head>
+        <title>
+            Knights of Eternity - Ulduar
+        </title>
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+        </style>
+        <script>const whTooltips = {colorLinks: true, iconizeLinks: false, renameLinks: true};</script>
+        <script src="https://wow.zamimg.com/js/tooltips.js"></script>
+    </head>
+    <body>
+        
+        <div class="row">
+            <div class="column-menu">
+                <div id="header">
+                    <span>Knights of Eternity</span>
+                    <h1>Ulduar</h1>
+                </div>
+                <hr class="small-line">
+                <h2>Le siège d'Ulduar</h2>
+                <ul class="menulist">
+                    <li onclick="openPage(event, 'Leviathan')" class="tablinks active" id="Leviathantab">Le Léviathan des Flammes</li>
+                    <li onclick="openPage(event, 'Ignis')" class="tablinks">Ignis</li>
+                    <li onclick="openPage(event, 'Razorscale')" class="tablinks">Razorscale</li>
+                </ul>
+                <h2>L'Antichambre d'Ulduar</h2>
+                <ul class="menulist">
+                    <li onclick="openPage(event, 'Assembly')" class="tablinks">L'Assemblée de Fer</li>
+                    <li onclick="openPage(event, 'Kologarn')" class="tablinks">Kologarn</li>
+                    <li onclick="openPage(event, 'Auriaya')" class="tablinks">Auriaya</li>
+                </ul>
+                <h2>Les Gardiens d'Ulduar</h2>
+                <ul class="menulist">
+                    <li onclick="openPage(event, 'Thorim')" class="tablinks">Thorim</li>
+                    <li onclick="openPage(event, 'Hodir')" class="tablinks">Hodir</li>
+                    <li onclick="openPage(event, 'Freya')" class="tablinks">Freya</li>
+                    <li onclick="openPage(event, 'Mimiron')" class="tablinks">Mimiron</li>
+                </ul>
+                <h2>La Descente dans la Folie</h2>
+                <ul class="menulist">
+                    <li onclick="openPage(event, 'Vezax')" class="tablinks">Général Vezax</li>
+                    <li onclick="openPage(event, 'YoggSaron')" class="tablinks">Yogg-Saron</li>
+                </ul>
+                <h2>Le Planétarium Céleste</h2>
+                <ul class="menulist">
+                    <li onclick="openPage(event, 'Algalon')" class="tablinks">Algalon</li>
+                </ul>
+            </div>
+            <div class="column-page">
+                <div id="Leviathan" class="tabcontent">
+                    <h3>Le Léviathan des Flammes<br />
+                    <span>Flame Leviathan</span></h3>
+
+                    <h4>Mode Normal</h4>
+                    <p>Le Léviathan ne possède pas de table d’aggro et va pourchasser un véhicule toutes les 30 secondes (un engin de siège ou un démolisseur; pas les motos). Si le Léviathan arrive à portée du véhicule pourchassé, il lui inflige énormément de dégâts.<br />
+                        Les dégâts infligés au boss proviennent majoritairement du debuff stackable pyrite des démolisseurs qu’il faut maintenir à tout prix.<br />
+                        Les passagers des engins de siège et des démolisseurs passeront leur temps à tuer des adds volant afin d’obtenir des barils de pyrite pour recharger les démolisseurs.<br />
+                        A noter qu’il y a une “première” phase avant le combat de balade dans la zone à véhicule où l’on trouve des trash tout pourris et des tours de défenses (à ne pas détruire dans le mode normal)<br />
+                        </p>
+
+                        <h5>Checklist</h5>
+                        <div class="checklist">
+                            • Equiper l'ilvl maximum disponible.<br />
+                            • Assigner les personnes avec le plus grand ilvl sur les conducteurs de démolisseurs.<br />
+                            • Les moins biens stuff sur les motos.<br />
+                        </div>
+
+                        <h5>Rôles des véhicules</h5>
+                        <p>Les conducteurs des démolisseurs seront la source principale de dégâts grâce à leur compétence
+                        <a href="https://www.wowhead.com/wotlk/fr/spell=62490/catapulter-un-tonneau-de-pyrite"></a> mais qui consommera de l'énergie. Cette compétence applique du dégât sur la durée qui peut se cumuler jusqu'à 10 fois.</p>
+                    <p>Il est très important de s'assurer que ce dégât sur la durée ne disparaisse pas.</p>
+                        <figure>
+                            <img src="media/leviathan-pyrite.jpg" />
+                            <figcaption>Un baril de Pyrite</figcaption>
+                        </figure>
+                    <p>
+                        Les passagers des démolisseurs peuvent recharger l'énergie du véhicule en attrapant des barils de pyrite qui rempliront l'énergie du démolisseur de 50%. En général, il faut chercher à recharger le démolisseur quand sont énergie est tombée à 50%.<br />
+                        Des robots volants possèdent ces barils et les passagers des démolisseurs et des engins de siège peuvent tirer dessus pour faire tomber les barils de pyrite.
+                    </p>
+                </div>
+                <div id="Razorscale" class="tabcontent">
+                    <h3>Tranchécaille<br />
+                    <span>Razorscale</span></h3>
+                </div>
+                <div id="Ignis" class="tabcontent">
+                    <h3>Ignis<br /></h3>
+                    <h4>Mode Normal Uniquement</h4>
+                    <p>Ignis est un combat globalement statique hormis pour un OT qui aura un rôle particulier dans la gestion d'adds.</p>
+                    <h5>Checklist</h5>
+                    <div class="checklist">
+                        • Deux tanks, un sur le boss, un sur les adds.<br />
+                        • Assigner un DPS capable de sortir un gros dégât en un coup pour tuer les adds.<br />
+                    </div>
+                </div>
+                <div id="Assembly" class="tabcontent">
+                    <h3>L'Assemblée de Fer<br />
+                    <span>The Assembly of Iron</span></h3>
+                </div>
+                <div id="Kologarn" class="tabcontent">
+                    <h3>Kologarn</h3>
+                </div>
+                <div id="Auriaya" class="tabcontent">
+                    <h3>Auriaya</h3>
+                    <h4>Mode Normal Uniquement</h4>
+                    <p>Auriaya patrouille avec ses 4 chats, les Sentinelles du Sanctuaire. La difficulté majeure de ce combat est le pull qu'il faut survivre puisque les 4 chats sautent sur la personne qui a pull ainsi que la gestion de quelques mécaniques.</p>
+                    
+                    <h5>Checklist</h5>
+                    <div class="checklist">
+                        • Trois tanks. Un sur Auriaya, un ou deux qui gèrent les adds.<br />
+                        • BL au pull pour tuer les sentinelles le plus vite possible.
+                        • Totems anti-fear, etc ...<br />
+                        • Résistance ombre.<br />
+                        • Tankée dos au raid.<br />
+                    </div>
+                    <h5>Le Pull</h5>
+                    <div class="summary">
+                        En résumé:<br />
+                        • Pull avec le raid caché. Pull au totem, piège de serpent, ... <br />
+                        • Focus les sentinelles au début une par une, ne pas se soucier du boss.<br />
+                        • Anticast <a href="https://www.wowhead.com/wotlk/fr/spell=64389/d%C3%A9flagration-du-factionnaire"></a> après un fear.<br />
+                        • Le MT se place sur le raid lors de <a href="https://www.wowhead.com/wotlk/fr/spell=64422/hurlement-sonore"></a>.<br />
+                        • Tuer le Feral Defender hors du raid.
+                    </div>
+                    <p>L'idée derrière le pull est de forcer les sentinelles à utiliser <a href="https://www.wowhead.com/wotlk/fr/spell=64666/bond-sauvage"></a>. Pour ce faire tout le raid sera caché derrière un mur. Le boss sera pull au totem (ou un autre solution de ce genre: piège de serpent, pull à la bulle).</p>
+                    <figure>
+                        <img src="media/auriaya_chat.jpg" />
+                        <figcaption>Une sentinelle</figcaption>
+                      </figure>
+                    <p>Un tank récupère Auriaya, et un autre récupère les 4 sentinelles (penser à aider le OT avec des redirections).</p>
+                    <p>Auriaya va utiliser <a href="https://www.wowhead.com/wotlk/fr/spell=64396/essaim-gardien"></a> de temps à autres qui fera apparaitre une dizaine de panthères pour attaquer un joueur aléatoire. Cette mécanique est relativement négligeable comme ils n'ont pas beaucoup de vie, 13k HP.</p>
+                    <p>Auriaya va régulièrement fear le raid tout entier avec <a href="https://www.wowhead.com/wotlk/fr/spell=64386/hurlement-terrifiant"></a>. Il faut absolument que toutes les mécaniques anti-fear soient posées (surtout sur les tanks). Juste après avoir fear le raid, Auriaya va caster puis canaliser <a href="https://www.wowhead.com/wotlk/fr/spell=64389/d%C3%A9flagration-du-factionnaire"></a> qu'il faut anticast sous peine de wipe.</p>
+                    <p>Elle fera <a href="https://www.wowhead.com/wotlk/fr/spell=64422/hurlement-sonore"></a> qui a un long temps de cast dans un cone devant elle. Les dégats étant répartis sur le nombre de cibles, le tank va tourner le boss pour se placer sur le raid.</p>
+                    <p>De temps à autre, Auriaya fera apparaître un (Feral Defender) récupéré par le off-tank qui fait des dégâts moyens et saute sur des joueurs hors portée pour les anticast (<a href="https://www.wowhead.com/wotlk/fr/spell=64496/ru%C3%A9e-farouche"></a>) ou les assommer (<a href="https://www.wowhead.com/wotlk/fr/spell=64478/bond-farouche"></a>). Il faudra les tuer hors du raid dans la mesure où il laisse une flaque à sa mort qui fait des dégâts. Le Feral Defender étant un chat, il a neuf vie et pourra être ressuscité par Auriaya.</p>
+                </div>
+                <div id="Thorim" class="tabcontent">
+                    <h3>Thorim</h3>
+                        <h4>Mode Normal</h4>
+                        <p>Thorim est un combat en deux phases. La première phase séparera le raid en deux qui géreront deux parties bien différentes: l'arène et le couloir.<br />Lorsque le groupe du couloir aura atteint Thorim, celà le conduira à se jeter dans l'arène et débuter la seconde phase.</p>
+                        <h5>Checklist</h5>
+                        <div class="checklist">
+                            • Un tank pour l'arene, un tank pour le couloir.<br />
+                            • Deux tanks qui vont s'échanger le boss pendant la phase 2 à cause de <a href="https://www.wowhead.com/wotlk/fr/spell=62130/frappe-d%C3%A9s%C3%A9quilibrante"></a>.<br />
+                            • Assigner majoritairement les DPS physique à l'arène lors de la phase 1 en raison d'un sort qui augmente le temps d'incantation de 75%.<br />
+                            • Prévoir deux paladins côté couloir pour la main de liberté.<br />
+                            • Un totem de résistance à la nature en raison des dégats de nature.<br />
+                            • Prévoir trois groupes de mêlée en P2 pour limiter les dégâts de <a href="https://www.wowhead.com/wotlk/fr/spell=62131/cha%C3%AEne-d%C3%A9clairs"></a>.<br />
+                        </div>
+                        <h5>Phase 1 - L'Arène</h5>
+
+                        <div class="summary">
+                        En résumé:<br />
+                            • Tuer en priorité: Warbringer > Evokers > Acolytes > Champions > Commoners.<br />
+                            • Attention aux tourbillons des Warbringer.<br />
+                            • Interrompre autant que possible.<br />
+                            • Les Warbringer peuvent être contrôle mental pour profiter de leur aura.<br />
+                        </div>
+
+                        <p>Avant de commencer le combat, il faudra tuer quelques mobs. Il n'y a rien de particulier si ce n'est un ver géant qu'il faut tanker dos au raid en raison de <a href="https://www.wowhead.com/wotlk/fr/spell=62315/souffle-dacide"></a>.</p>
+                        <p>Les joueurs qui sont assignés à l'arène doivent se répartir autant que possible. Thorim va régulièrement assommer un joueur avec <a href="https://www.wowhead.com/wotlk/fr/spell=62042/marteau-temp%C3%AAte"></a>, ce qui cause des dégâts à ce joueur et ceux autour de lui en plus d'augmenter le temps d'incantation de 75% (<a href="https://www.wowhead.com/wotlk/fr/spell=62470/tonnerre-assourdissant"></a>).</p>
+                        <p>Les piliers sur le bord extérieur de l'arène peuvent envoyer des éclairs aux joueurs proches lorsque Thorim les charge, il suffit de s'en éloigner.</p>
+                        <p>Des Adds vont régulièrement entrer dans l'arène, il y en a cinq types:</p>
+                        <ul class="pagelist">
+                            <li>(Acolytes): soignent leurs alliés avec <a href="https://www.wowhead.com/wotlk/fr/spell=62334/soins-sup%C3%A9rieurs"></a> et <a href="https://www.wowhead.com/wotlk/fr/spell=62441/r%C3%A9novation"></a>. Veiller à les anticast.</li>
+                            <li>(Commoners): assez faibles mais peuvent interrompre les sorts.</li>
+                            <li>(Champions): dangereux en raison de leur tourbillon. Peuvent charger les cibles qui ne sont pas en mêlée. Appliquent une frappe mortelle. A tuer en priotité.</li>
+                            <li>(Warbringers): des adds en mêlée qui tapent assez fort sur les tanks. Buffent leurs alliés avec <a href="https://www.wowhead.com/wotlk/fr/spell=62320/aura-de-c%C3%A9l%C3%A9rit%C3%A9"></a>. Peuvent être contrôle mental pour profiter de l'aura.</li>
+                            <li>(Evokers): apparaissent souvent avec les warbringers (mais peuvent aussi apparaitre avec les champions). Mettent des boucliers, font du dégâts et des soins. Deuxième dans la liste de priorités. A anticast et dispel autant que possible (ils peuvent se rendre insensible aux anticast).</li>
+                        </ul>
+                        <p>Les adds vont apparaître continuellement jusqu'à ce que la partie du raid dans le Couloir atteigne Thorim. Cette phase ne peut dépasser 5 minutes en raison de <a href="https://www.wowhead.com/wotlk/fr/spell=62560/berserk"></a> et <a href="https://www.wowhead.com/wotlk/fr/spell=62391/invocation-dun-orbe-de-foudre"></a></p>
+
+                        <h5>Phase 1 - Le Couloir</h5>
+                        <div class="summary">
+                            En résumé:<br />
+                                • Dans la première partie, prioriser les Acolytes. Penser à dispel les <a href="https://www.wowhead.com/wotlk/fr/spell=62441/r%C3%A9novation"></a>.<br />
+                                • Dans la première partie, être du bon côté du couloir pour éviter la vague de feu.<br />
+                                • Dans la première partie, une fois le mini-boss engagé: tout le monde au corps-à-corps pour éviter les charges, tout le monde derrière le mini-boss. Attention à 50% HP il se met un bouclier et renvoie des dégâts.<br />
+                                • Dans la seconde partie, focaliser les acolytes puis les gardes. Utiliser <a href="https://www.wowhead.com/wotlk/fr/spell=66115/main-de-libert%C3%A9"></a> quand le tank est ralenti.<br />
+                                • Dans la seconde partie, ne pas engager le mini-boss juste après un repop. Faire attention au joueur marqué par <a href="https://www.wowhead.com/wotlk/spell=62526/rune-detonation"></a> et s'en éloigner.<br />
+                                • Ne pas foncer au centre dans la dernière partie ce qui déclencherait un piège et vous assommera très longtemps.
+                            </div>
+                        <p>Après avoir tué les adds dans l'arène au début, un levier sur la gauche de la salle deviendra cliquable (c'est un cast) et ouvrira la porte du Couloir qui est formée de trois sections.</p>
+                        <p>1. La première partie contient des adds et un mini-boss. Ce dernier enverra une vague de flammes vers le raid soit sur la partie gauche ou la partie droite du couloir. C'est complètement aléatoire et il faut veiller à se mettre du bon côté. Cette mécanique n'est pas fatale mais inflige beaucoup de dégâts. Le mini-boss arrête de faire ça quand il est engagé (mais va achever celui en cours). Le boss <a href="https://www.wowhead.com/wotlk/fr/spell=62613/charge"></a>, fait un cleave (<a href="https://www.wowhead.com/wotlk/fr/spell=62339/choc"></a>). A 50% de vie il se met une <a href="https://www.wowhead.com/wotlk/fr/spell=62338/barri%C3%A8re-runique"></a>. Il faut donc se mettre dans son dos, au corps-à-corps et faire attention à ne pas se tuer avec le renvoi de dégâts.<br/>
+                        Pour ce qui est des adds il y a:</p>     
+                        <ul class="pagelist">
+                            <li>(Acolytes): soignent leurs alliés avec <a href="https://www.wowhead.com/wotlk/fr/spell=62334/soins-sup%C3%A9rieurs"></a> et <a href="https://www.wowhead.com/wotlk/fr/spell=62441/r%C3%A9novation"></a>. Veiller à les anticast et à dispel les rénovations.</li>
+                            <li>(Iron Ring Guard): font des dégâts importants sur le tank et peuvent l'assomer avec <a href="https://www.wowhead.com/wotlk/fr/spell=64151/croc-en-jambe-circulaire"></a>. Ils font aussi <a href="https://www.wowhead.com/wotlk/fr/spell=62331/empaler"></a> qui applique un saignement massif qui ne s'arrête que lorsque le tank est remonté à 90% de ses points de vie. Finalement il faut faire attention à leur enchainement.</li>
+                        </ul>
+                        <p>
+                            2. La seconde partie contient également des Acolytes mais aussi des (Iron Honor Guard) qui peuvent assomer avec <a href="https://www.wowhead.com/wotlk/fr/spell=62332/frappe-de-bouclier"></a>, possèdent un <a href="https://www.wowhead.com/wotlk/fr/spell=42724/encha%C3%AEnement"></a> et vont ralentir le tank avec <a href="https://www.wowhead.com/wotlk/fr/spell=48639/brise-genou"></a> pour limiter la progression, des roulement de <a href="https://www.wowhead.com/wotlk/fr/spell=66115/main-de-libert%C3%A9"></a> vont grandement aider.<br/>
+                            Les Gardes vont continuellement appraitre tant que le mini-boss n'est pas engagé. Idéalement il faut éviter de l'engager juste après un repop. Au pull, le mini-boss va grandement buffer les adds encore en vie (ce n'est pas un problème si il n'en reste que 2-3) et il faudra s'assurer de les achever avant de passer sur le mini-boss.<br>
+                            Ce dernier va faire un knockback autour de lui avec <a href="https://www.wowhead.com/wotlk/fr/spell=62411/pi%C3%A9tinement"></a>mais également placer une <a href="https://www.wowhead.com/wotlk/spell=62526/rune-detonation"></a> sur un joueur dont tout le monde devra s'éloigner.
+                        </p>
+                        <p>
+                            3. Dans cette section, il suffit tout simplement d'éviter les pièges au sol (coller un mur à gauche ou à droite suffit) et atteindre Thorim. Si le but n'est pas de déclencher le hard mode, on attendra que le raid ait rejoint l'arene et que le dernier joueur tape Thorim.
+                        </p>
+                        <h5>Phase 2 - Thorim</h5>
+                        <div class="summary">
+                            En résumé:<br />
+                                • Se positionner comme indiqué sur le plan pour gérer <a href="https://www.wowhead.com/wotlk/fr/spell=62131/cha%C3%AEne-d%C3%A9clairs"></a>.<br />
+                                • Echanger les tanks à chaque <a href="https://www.wowhead.com/wotlk/fr/spell=62130/frappe-d%C3%A9s%C3%A9quilibrante"></a>.<br />
+                                • Eviter les cones de dégâts électriques avant qu'ils n'apparaissent (<a href="https://www.wowhead.com/wotlk/fr/spell=62279/charge-de-foudre"></a>).<br />
+                            </div>
+                        <p>Si Thorim est amené dans l'arène plus trois minutes après le début du combat il est soumis à <a href="https://www.wowhead.com/wotlk/fr/spell=62565/toucher-dassujettissement"></a> qui réduit sa vie et ses dégâts et constitue le mode normal.</p>
+                        <p>Thorim ne tape pas très fort en mode normal mais au cours de la phase 2 sa vitesse d'attaque et ses dégâts vont augmenter peu à peu avec <a href="https://www.wowhead.com/wotlk/fr/spell=62279/charge-de-foudre"></a>.</p>
+                        <p>Les tanks doivent s'échanger le boss après chaque <a href="https://www.wowhead.com/wotlk/fr/spell=62130/frappe-d%C3%A9s%C3%A9quilibrante"></a></p>
+                        <figure>
+                            <img src="media/thorim_charge.png"/>
+                            <figcaption>Direction de charge de foudre.</figcaption>
+                          </figure>
+                        <p>Thorim va régulièrement envoyer des éclairs dans un cone de 60° autour de lui dans la direction d'un des orbes. Deux sections de la salle n'ont pas d'orbe: le trône de Thorim où les tanks se placeront et l'entrée du couloir où les soigneurs des tanks se placeront. Avant de faire son sort, l'orbe est chargé par un rayon électrique ce qui permet de savoir la direction de <a href="https://www.wowhead.com/wotlk/fr/spell=62279/charge-de-foudre"></a> et l'éviter.</p>
+                        
+                        <figure>
+                            <img src="media/plan_thorim_normal.png" class="imgfull"/>
+                            <figcaption>Positionnement lors de la Phase 2 de Thorim.</figcaption>
+                          </figure>
+                          <p>Finalement le placement de chacun est dicté par <a href="https://www.wowhead.com/wotlk/fr/spell=62131/cha%C3%AEne-d%C3%A9clairs"></a> ce qui implique que les distances se répartissent dans la salle et que les mêlée se regroupent en trois tas autour du boss (pas plus de 3) par tas.</p>
+
+                          <p><a href="https://youtu.be/jAyTqryABJ0">Vidéo</a></p>
+                </div>
+                <div id="Hodir" class="tabcontent">
+                    <h3>Hodir</h3>
+                    <h4>Mode Normal et HM</h4>
+                    <p>Hodir représente un combat particulier dans la mesure où le HM consiste simplement à le tuer en moins de deux minutes. Les mécaniques sont exactement identiques. De fait il n'y a aucune raison pour ne pas essayer de le faire en HM. Un certain nombre de mécaniques sont disponibles lors du combat pour augmenter le DPS et arriver à le tuer dans les temps.</p>
+                    <h5>Checklist</h5>
+                    <div class="checklist">
+                        • Un seul tank.<br />
+                        • Bloodlust quand 25+ stacks de roussi.<br />
+                    </div>
+                    <h5>Généralités</h5>
+                    <p> Hodir applique <a href="https://www.wowhead.com/wotlk/fr/spell=62038/froid-mordant"></a> qui s'enlève en se déplaçant comme le boss final du donjon du Nexus.<br />
+                    De temps à autre il fait une nova (<a href="https://www.wowhead.com/wotlk/fr/spell=62469/gel"></a>) 10m autour de lui qui immobilise les joueurs, peut être dispel.<br />
+                    Toutes les minutes, Hodir fait <a href="https://www.wowhead.com/wotlk/fr/spell=61968/gel-instantan%C3%A9"></a> qui glaçonne tout le monde à moins d'être placé sur une <a href="https://www.wowhead.com/wotlk/fr/spell=62463/cong%C3%A8re"></a>. <br /> Les congères apparaissent un peu avant avec des stalactites de glace qui tombent.</p>
+                    <p>Juste après, Hodir gagnera <a href="https://www.wowhead.com/wotlk/fr/spell=62478/coups-gel%C3%A9s"></a> et on pourra utiliser des CD à ce moment là.</p>
+                    <h5>Les PNJ</h5>
+                    <p>Au début du combat, il y a 8 PNJ (2 de chaque type), à savoir:</p>
+                    <ul class="pagelist">
+                        <li>Prêtres: soignent le raid, font un peu de dégats et peuvent dispel.</li>
+                        <li>Druides: placent <a href="https://www.wowhead.com/wotlk/fr/spell=62807/lumi%C3%A8re-stellaire"></a> pendant une minute qui augmente la vitesse d'attaque et d'incantation de 50%. Ils font également un peu de dégâts.</li>
+                        <li>Shamans: placent <a href="https://www.wowhead.com/wotlk/fr/spell=65123/nuage-dorage"></a> sur un joueur qui augmente ses dégâts critiques de 135%. Ce joueur peut se déplacer sur d'autres joueurs pour le partager jusqu'à 6 fois.</li>
+                        <li>Mages: utilisent <a href="https://www.wowhead.com/wotlk/fr/spell=62823/invocation-dun-feu-douillet"></a> qui place un petit au sol. Les joueurs placés près (11m) d'un feu peuvent appliquer <a href="https://www.wowhead.com/wotlk/fr/spell=65280/roussi"></a> sur le boss qui augmente les dégâts magiques. C'est la source principale de dégâts. Les feux sont éteints à chaque <a href="https://www.wowhead.com/wotlk/fr/spell=61968/gel-instantan%C3%A9"></a>.</li>
+                    </ul>
+                    <h5>
+                        Déroulement du combat</h5>
+                        <div class="summary">
+                            • Libérer les mages en priorité puis les druides / shaman et enfin les prêtres.<br />
+                            • Idéalement tanker Hodir à côté d'une <a href="https://www.wowhead.com/wotlk/fr/spell=62807/lumi%C3%A8re-stellaire"></a> pour que les mêlées en profitent.<br />
+                            • Les soigneurs doivent se placer sur <a href="https://www.wowhead.com/wotlk/fr/spell=62807/lumi%C3%A8re-stellaire"></a>.<br />
+                            • Placer les DPS capable de faire monter roussi sur les feux pour maximiser la vitesse à laquelle le débuff monte.</a>.<br />
+                        </div>
+                    
+                </div>   
+                <div id="Freya" class="tabcontent">
+                    <h3>Freya</h3>
+                    <h4>Mode Normal</h4>
+                    <p>Freya est un combat pendant lequel elle se soigne extrêmement fort. A chaque fois qu'une vague d'adds est vaincue, son soin est réduit de 1/6ème. Elle ne fait plus apparaitre d'adds après 6 vagues et une phase 2 va commencer.</p>
+                    <p></p>
+                        <h5>Checklist</h5>
+                        <div class="checklist">
+                            • Deux tanks.<br />
+                            • Totem de résistance nature.<br />
+                            • Aura RF.<br />
+                            • Prévoir des assignations pour CC les Snaplasher.
+                        </div>
+                        <h5>Phase 1</h5>
+                        <div class="summary">
+                            • Tuer les arbres (Eonar's Gift) qui apparaissent. Un joueur sera assigné à ça.
+                            • Être espacés pour gérer <a href="https://www.wowhead.com/wotlk/fr/spell=62623/rayon-de-soleil"></a>.
+                            • Ancient Conservator: le tanker par un OT, se cacher sous les champignons. Le joueur marqué par <a href="https://www.wowhead.com/wotlk/fr/spell=62589/fureur-de-la-nature"></a> s'éloigne du raid.
+                            • Detonating Lashers: se regrouper, AoE, les stun ou CC avant leur mort et s'éloigner avant de les finir pour éviter leur explosion à leur mort.
+                            • Guardians of Nature: à tuer en 12s l'un de l'autre. Le MT prend le Storm Lasher, le OT prend l'élémentaire d'eau et le snaplasher sera kité.
+                        </div>
+
+                        <p>Pendant cette phase, Freya va utiliser deux sorts:</p>
+                        <ul class="pagelist">
+                            <li><a href="https://www.wowhead.com/wotlk/fr/spell=62623/rayon-de-soleil"></a>: fait des dégâts sur un joueur aléatoire et autour de lui (8m) après un cast court. Incite le raid à se répartir.</li>
+                            <li><a href="https://www.wowhead.com/wotlk/fr/npc=33228/eonars-gift"></a>: Freya invoque un arbre qu'il faut détruire sinon celui-ci va soigner Freya et ses adds de 60% après 12s (<a href="https://www.wowhead.com/wotlk/fr/spell=62584/don-de-la-lieuse-de-vie"></a>).</li>
+                        </ul>
+                        <p>De plus Freya va invoquer différents packs d'add à intervalles réguliers. Il y en a trois différentes, qui apparaissent deux fois.</p>
+                        <ul class="pagelist">
+                            <li>(Ancient Conservator): un large tréant qui caste <a href="https://www.wowhead.com/wotlk/fr/spell=62532/poigne-du-conservateur"></a> qui empêche les sorts et les compétences. Il faut se placer sous un champignon pour pouvoir re-caster (et gagner un buff de DPS). Par moments, le tréant va utiliser <a href="https://www.wowhead.com/wotlk/fr/spell=62589/fureur-de-la-nature"></a> sur un joueur qui devra s'éloigner du reste du raid (8m) pendant 10 secondes.</li>
+                            <li>(Detonating Lashers): 12 petits adds qui explosent à leur mort faisant des dégâts de feu importants. Le raid doit se packer quand ils apparaissent, zoner puis s'écarter avant leur mort. On placera du CC AoE avant leur mort.</li>
+                            <li>(Guardians of Nature): trois adds différents avec plus ou moins la même vie. Ils doivent mourir ensemble (12sec) sinon ils se ressuscitent entre eux.
+
+                                <ul>
+                                    <li>Storm Lasher: fait des dégâts de nature (<a href="https://www.wowhead.com/wotlk/fr/spell=62649/eclair-de-temp%C3%AAte"></a> et <a href="https://www.wowhead.com/wotlk/fr/spell=62648/fouet-foudroyant"></a>). Il faut anticast <a href="https://www.wowhead.com/wotlk/fr/spell=62649/eclair-de-temp%C3%AAte"></a> </li>
+                                    <li>(Ancient Water Spirit): fait <a href="https://www.wowhead.com/wotlk/fr/spell=62653/raz-de-mar%C3%A9e"></a> qui charge un joueur et fait des dégâts dans son passage. Beaucoup de dégâts mais pas un one-shot et peut être assommé / CC.</li>
+                                    <li>(Snaplasher): possède <a href="https://www.wowhead.com/wotlk/fr/spell=62663/ecorce-durcie"></a> qui augmente considérablement ses dégâts (au point de pouvoir one-shot un tank) mais le ralentit. Il faut monter ses stacks jusqu'à 30-50 puis les laisser fade. Alternativement peut être kité.</li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                        <h5>Phase 2</h5>
+                        <p>Une fois les adds tués, Freya se soignera beaucoup moins et il sera possible de la tuer. Elle continue de faire <a href="https://www.wowhead.com/wotlk/fr/spell=62623/rayon-de-soleil"></a> et <a href="https://www.wowhead.com/wotlk/fr/npc=33228/eonars-gift"></a>. Elle gagner une nouvelle compétence en phase 2 qui est <a href="https://www.wowhead.com/wotlk/fr/spell=64587/bombe-de-nature"></a> qui place des bombes sous la position des joueurs. Pour gérer cette mécanique le raid sera regroupé (mais pas au point de créer des problèmes avec les rayons de soleil) pour que les bombes apparaissent plus ou moins au même endroit et s'en écarte.</p>
+                </div>
+                <div id="Mimiron" class="tabcontent">
+                    <h3>Mimiron</h3>
+                    <h4>Mode Normal</h4>
+                    <p>Mimiron est un combat en quatre phases, la quatrième étant une combinaison des trois premières. Le combat est constitué de mécaniques simples mais extrêmement punitives, le one-shot étant très courant.</p>
+                        <h5>Checklist</h5>
+                        <div class="checklist">
+                            • Un MT. Un DPS distance pour tanker la tête en phase 3 et 4.<br />
+                            • Aura RF. Enormément de dégâts de feu.<br />
+                        </div>
+                        <h5>Phase 1 - Leviathan MK II</h5>
+                        <div class="checklist">
+                            • Eviter les mines.<br />
+                            • Sortir de la mêlée lors de <a href="https://www.wowhead.com/wotlk/fr/spell=63631/horion-explosif"></a>.<br />
+                            • Être réactif pour soigner <a href="https://www.wowhead.com/wotlk/fr/spell=62997/explosion-de-plasma"></a>.<br />
+                            • Être bien espacés à distance (+de 5m).<br />
+                        </div>
+                        <p>Mimiron engage le raid avec un char, le Leviathan MK II et alterne entre des dégâts de mêlée et à distance.</p>
+                        <p><a href="https://www.wowhead.com/wotlk/fr/spell=63016/mines-de-proximit%C3%A9"></a>: Mimiron pose des mines autour du char, après un petit temps d'armement, les mines utilisent <a href="https://www.wowhead.com/wotlk/fr/spell=63009/explosion"></a> si un joueur passe au-dessus. Les mêlées devront faire très attention comme ils seront packés sur le boss.</p>
+                        <p><a href="https://www.wowhead.com/wotlk/fr/spell=63666/obus-napalm"></a>: cible un joueur à plus de 15m et fait des dégâts à l'impact ainsi qu'un DoT sur le joueur ciblé et les alliées autour. Il faudra donc bien s'espacer. Ca laisse une zone de feu au sol mais c'est purement visuel et ne fait pas de dégâts en plus. Il n'y a donc pas besoin de bouger. Les dégâts sont assez conséquents ce qui rend l'espacement d'autant plus important.</p>
+                        <p><a href="https://www.wowhead.com/wotlk/fr/spell=62997/explosion-de-plasma"></a>: des dégâts non évitables sur le tank. Ne peut pas être résisté. Les soigneurs doivent être très réactifs dessus en raison de la quantité massive de dégâts.</p>
+                        <p><a href="https://www.wowhead.com/wotlk/fr/spell=63631/horion-explosif"></a>: immédiatement après l'explosion de plasma, Mimiron va incanter ce sort (pendant 4 secondes) qui fait 100,000 de dégâts aux personnes se trouvant à moins de 15 mètres. Tout le monde (dont le tank, en courant) doit en sortir.</p>
+                        <figure>
+                            <img src="media/plan_mimiron_p1.png" class="imgfull"/>
+                            <figcaption>Positionnement lors de la Phase 1 de Mimiron.</figcaption>
+                          </figure>
+                        <div style="clear:both"></div>
+                        <h5>Phase 2 - VX-001</h5>
+                        <div class="checklist">
+                            • Être réactif sur le laser; ne pas être en face lors du début.<br />
+                            • Bien éviter les roquettes.<br />
+                            • Être réactif pour soigner <a href="https://www.wowhead.com/wotlk/fr/spell=63677/vague-de-chaleur"></a>.<br />
+                        </div>
+                        <p>Dans cette seconde phase, Mimiron prend le contrôle d'un robot. Il n'y a pas besoin de tank.</p>
+                        <p><a href="https://www.wowhead.com/wotlk/fr/spell=63387/explosion-rapide"></a>: au lieu d'avoir une aggro fixe, Mimiron va utiliser ce sort régulièrement sur un joueur aléatoire. Fait également des dégâts sur tous les joueurs dans la trajectoire. Les mêlée en particulier doivent faire attention à ne pas se retrouver face aux canons.</p>
+                        <p><a href="https://www.wowhead.com/wotlk/fr/spell=63293/barrage-laser-p3wx2"></a>: après un cast de 4s, VX-001 tire un énorme laser en face de lui (il faut donc ne pas être en face après le cast) et se met à tourner lentement pendant 10s.</p>
+                        <p><a href="https://www.wowhead.com/wotlk/fr/spell=63041/frappe-de-fus%C3%A9e"></a>: marque l'emplacement de joueurs (une cible apprait au sol) et envoie une roquette qui inflige 5,000,000 de dégâts à cet emplacement sur 3m.</p>
+                        <p><a href="https://www.wowhead.com/wotlk/fr/spell=63677/vague-de-chaleur"></a>: toutes les 30s, Mimiron va faire des dégâts de feu importants sur tout le raid.</p>
+                        <figure>
+                            <img src="media/plan_mimiron_p2.png" class="imgfull"/>
+                            <figcaption>Positionnement lors de la Phase 2 de Mimiron.</figcaption>
+                        </figure>
+                        <div style="clear:both"></div>
+                        <h5>Phase 3 - Aerial Command Unit</h5>
+                        <div class="checklist">
+                            • Un range assigné pour tanker. Eviter de lui prendre l'aggro pour que les soigneurs ne doivent pas changer de cible tout le temps.<br />
+                            • Les tanks récupèrent un maximum d'adds. Attention aux bombes.
+                            • Quelques distances assignés sur les bombes, le reste sur le boss.
+                            • Récupérer l'item et l'utiliser pour faire tomber Mimiron. Burst le boss à ce moment-là.
+                        </div>
+                        <p>Pendant cette phase, Mimiron est en l'air dans un robot volant. Il peut être ciblé mais les dps mêlée ne peuvent pas l'atteindre et vont gérer des adds à la place afin de faire tomber la tête. Dans cette phase, ce sera un DPS distance qui maintiendra l'aggro; idéalement un démoniste qui peut générer beaucoup d'aggro. Tant que sa cible ne s'éloigne pas trop, la tête de Mimiron restera immobile.</p>
+
+                        <p><a href="https://www.wowhead.com/wotlk/fr/spell=64535/boule-de-plasma"></a>: Mimiron incantera ce sort à sa cible d'aggro toutes les deux secondes.</p>
+
+                        <p>Pendant la phase, des adds robotiques apparaitront:</p>
+                        <ul class="pagelist">
+                            <li>(Assault Bot): apparaissent dans le rayon rouge. Utilisent <a href="https://www.wowhead.com/wotlk/fr/spell=64668/champ-magn%C3%A9tique"></a> qui immbolisent leur cible. Peut être dispel (magique). Cible principale des mêlées. A leur mort, droppent <a href="https://www.wowhead.com/wotlk/fr/item=46029/noyau-magn%C3%A9tique"></a> qui peut être utilisé pour faire tomber Mimiron et augmenter ses dégâts subits de 50%.</li>
+                            <li>(Bomb Bot): apparaissent en-dessous du boss. Se baladent sans but précis mais explosent si un joueur est proche. Ils ont ~50,000HP. Peuvent être CC.</li>
+                            <li>(Junk Bot): apparaissent dans le rayon vert. Peu de vie et peu de dégâts. Doivent être cleave.</li>
+                        </ul>
+
+                        <div class="summary">
+                            Macro pour utiliser l'item:<br />
+                            #showtooltip item:46029<br />
+                            /use Magnetic Core
+                        </div>
+
+                        <h5>Phase 4 - V0-L7R-0N</h5>
+                        <div class="checklist">
+                            • Un range assigné pour tanker. Eviter de lui prendre l'aggro pour que les soigneurs ne doivent pas changer de cible tout le temps.<br />
+                            • Eviter les mines.<br />
+                            • Sortir de la mêlée lors de <a href="https://www.wowhead.com/wotlk/fr/spell=63631/horion-explosif"></a>.<br />
+                            • Être réactif sur le laser; ne pas être en face lors du début.<br />
+                            • Bien éviter les roquettes.<br />
+                        </div>
+                        <p>Mimiron combine plus ou moins les trois phases précédentes: le char, le corps et la tête de Mimiron. Il faut tuer les trois éléments en même temps (15s) sinon toutes se régénèrent pour 50% de leur vie.</p>
+                        <p>Pas toutes les mécaniques précédentes reviennent, celles qui restent sont:</p>
+                        <ul class="pagelist">
+                            <li><a href="https://www.wowhead.com/wotlk/fr/spell=63016/mines-de-proximit%C3%A9"></a>: éviter les mines.</li>
+                            <li><a href="https://www.wowhead.com/wotlk/fr/spell=63631/horion-explosif"></a>: tout le monde doit courir hors de la mêlée (plus de 15m)</li>
+                            <li><a href="https://www.wowhead.com/wotlk/fr/spell=64536/impulsion-de-la-main"></a>: un nouveau sort, similaire à <a href="https://www.wowhead.com/wotlk/fr/spell=63387/explosion-rapide"></a>. Il cible un joueur au hasard et fait des dégâts dans une cone vers cette direction.</li>
+                            <li><a href="https://www.wowhead.com/wotlk/fr/spell=63293/barrage-laser-p3wx2"></a>: le laser qui tourne.</li>
+                            <li><a href="https://www.wowhead.com/wotlk/fr/spell=63041/frappe-de-fus%C3%A9e"></a>: les missiles qui font 5,000,000 de dégats.</li>
+                            <li><a href="https://www.wowhead.com/wotlk/fr/spell=64535/boule-de-plasma"></a>: la tête incante ce sort sur sa cible.</li>
+                        </ul>
+                        De plus la partie inférieure du boss se déplace avec sa cible ce qui implique le déplacement de toute le reste.
+                        <figure>
+                            <img src="media/plan_mimiron_p3.png" class="imgfull"/>
+                            <figcaption>Positionnement lors de la Phase 3 de Mimiron.</figcaption>
+                        </figure>
+                </div>
+                <div id="Vezax" class="tabcontent">
+                    <h3>Général Vezax</h3>
+                </div>
+                <div id="YoggSaron" class="tabcontent">
+                    <h3>Yogg-Saron</h3>
+                </div>
+                <div id="Algalon" class="tabcontent">
+                    <h3>Algalon</h3>
+                </div>
+            </div>
+          </div>
+          <script type="text/javascript" src="js/tabs.js"></script>
+          <script>
+            document.getElementById("Leviathantab").click();
+          </script>
+    </body>
+</html>
+
